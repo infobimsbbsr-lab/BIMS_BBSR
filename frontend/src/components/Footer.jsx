@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
@@ -58,11 +59,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-bims-green shrink-0" size={18} />
-                <p>+91 12345 67890</p>
+                <p>+91 70084 11323</p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-bims-green shrink-0" size={18} />
-                <p>info@bimsbbsr.in</p>
+                <p>info.bimsbbsr@gmail.com</p>
               </div>
             </div>
           </div>

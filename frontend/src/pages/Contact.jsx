@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -39,8 +40,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Phone Numbers</h4>
-                  <p className="text-gray-600">+91 12345 67890</p>
-                  <p className="text-gray-600">+91 09876 54321</p>
+                  <p className="text-gray-600">+91 70084 11323</p>
                 </div>
               </div>
 
@@ -50,8 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Email Address</h4>
-                  <p className="text-gray-600">admission@bimsbbsr.in</p>
-                  <p className="text-gray-600">info@bimsbbsr.in</p>
+                  <p className="text-gray-600">info.bimsbbsr@gmail.com</p>
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -101,10 +102,7 @@ const Admissions = () => {
             <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help?</h3>
             <p className="text-sm text-gray-600 mb-4">Contact our admission cell for guidance.</p>
             <div className="flex items-center gap-3 text-bims-blue font-bold mb-2">
-              <Phone size={20} /> +91 99999 88888
-            </div>
-             <div className="flex items-center gap-3 text-bims-blue font-bold">
-              <Phone size={20} /> +91 77777 66666
+              <Phone size={20} /> +91 70084 11323
             </div>
           </div>
         </div>

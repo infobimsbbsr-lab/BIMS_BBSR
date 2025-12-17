@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Facebook, Linkedin, Twitter, Instagram, ChevronDown, Search } from 'lucide-react';
@@ -15,8 +16,8 @@ const Navbar = () => {
       <div className="bg-gray-900 text-gray-300 py-2 text-xs md:text-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0">
-            <span className="flex items-center gap-2 hover:text-white transition cursor-pointer"><Phone size={14} /> +91 12345 67890</span>
-            <span className="flex items-center gap-2 hover:text-white transition cursor-pointer"><Mail size={14} /> info@bimsbbsr.in</span>
+            <span className="flex items-center gap-2 hover:text-white transition cursor-pointer"><Phone size={14} /> +91 70084 11323</span>
+            <span className="flex items-center gap-2 hover:text-white transition cursor-pointer"><Mail size={14} /> info.bimsbbsr@gmail.com</span>
           </div>
           <div className="hidden md:flex space-x-4 items-center">
             <div className="flex space-x-3 pr-4 border-r border-gray-700">
