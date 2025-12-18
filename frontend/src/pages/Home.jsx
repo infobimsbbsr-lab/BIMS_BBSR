@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -92,7 +93,7 @@ const Home = () => {
           <h4 className="text-bims-green font-bold uppercase tracking-wider mb-2">Welcome to BIMS</h4>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Empowering Minds, <br/>Transforming Lives</h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            At Bhubaneswar Institute of Management and Sciences, we believe in holistic development. Modeled after leading global institutions, we provide an environment that fosters critical thinking, innovation, and leadership.
+            At Bhubaneswar Institute of Management and Science, we believe in holistic development. Modeled after leading global institutions, we provide an environment that fosters critical thinking, innovation, and leadership.
           </p>
           <ul className="space-y-3 mb-8">
             {['Industry Integrated Curriculum', '100% Placement Assistance', 'Soft Skills Development'].map((item, i) => (

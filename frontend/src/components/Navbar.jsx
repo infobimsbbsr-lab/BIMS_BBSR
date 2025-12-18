@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Facebook, Linkedin, Twitter, Instagram, ChevronDown, Search } from 'lucide-react';
@@ -47,13 +46,13 @@ const Navbar = () => {
             />
             <div>
               <h1 className="text-2xl md:text-3xl font-extrabold text-bims-blue leading-tight tracking-tight hidden md:block">
-                BHUBANESWAR INSTITUTE OF <br className="hidden lg:block"/> MANAGEMENT AND SCIENCES
+                BHUBANESWAR INSTITUTE OF <br className="hidden lg:block"/> MANAGEMENT AND SCIENCE
               </h1>
               <h1 className="text-xl font-extrabold text-bims-blue leading-tight tracking-tight md:hidden">
                 BIMS BHUBANESWAR
               </h1>
               <p className="text-xs md:text-sm font-bold text-red-600 italic tracking-wide mt-1 uppercase hidden md:block">
-                An Unit Of Orissa Millennium Education Trust
+                An Unit Of Swastik Education & Charitable Trust (SECT)
               </p>
             </div>
           </Link>

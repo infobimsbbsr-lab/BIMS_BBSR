@@ -16,7 +16,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Legacy of Excellence</h2>
             <div className="prose text-gray-600 leading-relaxed space-y-4">
               <p>
-                Bhubaneswar Institute of Management and Sciences (BIMS), a unit of Orissa Millennium Education Trust, was established with a vision to create future-ready leaders. Located in the temple city of Bhubaneswar, BIMS has emerged as a premier business school in Eastern India.
+                Bhubaneswar Institute of Management and Science (BIMS), a unit of Swastik Education & Charitable Trust (SECT), was established with a vision to create future-ready leaders. Located in the temple city of Bhubaneswar, BIMS has emerged as a premier business school in Eastern India.
               </p>
               <p>
                 Our curriculum is rigorously designed to bridge the gap between academic theory and industry practice. With a focus on holistic development, we ensure our students are not just employable but capable of driving innovation in the corporate world.

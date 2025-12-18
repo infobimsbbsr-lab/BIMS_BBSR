@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
@@ -20,7 +20,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-white">BIMS</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
-              Bhubaneswar Institute of Management and Sciences (BIMS) is dedicated to creating industry-ready professionals through academic excellence and practical exposure.
+              Bhubaneswar Institute of Management and Science (BIMS) is dedicated to creating industry-ready professionals through academic excellence and practical exposure.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-bims-green hover:text-white transition"><Facebook size={16}/></a>
