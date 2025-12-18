@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -30,7 +29,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Campus Address</h4>
-                  <p className="text-gray-600">IDCO Plot No. 2, Sector-A, Zone-B,<br/> Mancheswar Industrial Estate,<br/> Bhubaneswar, Odisha 751010</p>
+                  <p className="text-gray-600">Bhubaneswar, Khordha</p>
                 </div>
               </div>
               
