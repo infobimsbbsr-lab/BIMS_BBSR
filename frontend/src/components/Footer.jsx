@@ -89,11 +89,17 @@ const Footer = () => {
       </div>
       
       <div className="border-t border-gray-800 py-6">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© {new Date().getFullYear()} BIMS Bhubaneswar. All Rights Reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+        <div className="max-w-7xl mx-auto px-4 text-sm grid grid-cols-1 md:grid-cols-3 items-center gap-4">
+          <p className="text-center md:text-left">© {new Date().getFullYear()} BIMS Bhubaneswar. All Rights Reserved.</p>
+          <div className="flex justify-center space-x-6">
             <Link to="#" className="hover:text-white transition">Privacy Policy</Link>
             <Link to="#" className="hover:text-white transition">Terms of Use</Link>
+          </div>
+          <div className="flex items-center justify-center md:justify-end gap-2">
+            <span className="text-gray-400">Developed by</span>
+            <span className="font-semibold text-white transition-transform duration-300 animate-pulse hover:animate-none hover:scale-105 motion-reduce:animate-none">
+              Silan Software Pvt Ltd
+            </span>
           </div>
         </div>
       </div>
