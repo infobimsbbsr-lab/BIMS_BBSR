@@ -10,6 +10,7 @@ import eventRoutes from './routes/eventRoutes.js';
 import recruiterRoutes from './routes/recruiterRoutes.js';
 import testimonialRoutes from './routes/testimonialRoutes.js';
 import applicationRoutes from './routes/applicationRoutes.js';
+import seedRoutes from './routes/seedRoutes.js';
 
 dotenv.config();
 
@@ -30,6 +31,7 @@ app.use('/api/events', eventRoutes);
 app.use('/api/recruiters', recruiterRoutes);
 app.use('/api/testimonials', testimonialRoutes);
 app.use('/api/applications', applicationRoutes);
+app.use('/api/seed', seedRoutes);
 
 app.get('/', (req, res) => {
   res.send('BIMS API is running...');
