@@ -47,6 +47,7 @@ const Programs = () => {
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-bims-green text-white text-xs font-bold px-2 py-1 rounded">{course.code || 'PG'}</span>
                     <span className="flex items-center text-gray-500 text-sm gap-1"><Clock size={14}/> {course.duration}</span>
+                    {course.seats && <span className="bg-blue-100 text-bims-blue text-xs font-bold px-2 py-1 rounded">{course.seats} Seats</span>}
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{course.title}</h3>
                   <p className="text-gray-600 mb-6">{course.description}</p>

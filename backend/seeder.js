@@ -24,52 +24,49 @@ const importData = async () => {
     // Sample Courses
     const courses = [
       {
-        title: 'Master of Business Administration (MBA)',
-        code: 'MBA',
-        description: 'A two-year full-time program designed to create business leaders. Specializations available in Finance, Marketing, HR, Operations, and IT.',
-        duration: '2 Years',
-        eligibility: 'Graduation with 50% marks + Entrance Score',
-        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop'
-      },
-      {
-        title: 'Integrated MBA (IMBA)',
-        code: 'IMBA',
-        description: 'A five-year integrated course for students after 12th standard, combining undergraduate and postgraduate management education.',
-        duration: '5 Years',
-        eligibility: '10+2 with 45% marks',
-        image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop'
-      },
-      {
-        title: 'Bachelor of Business Administration (BBA)',
-        code: 'BBA',
-        description: 'A foundational undergraduate program that provides a strong understanding of business principles and management practices.',
-        duration: '3 Years',
-        eligibility: '10+2 in any stream with 45% marks',
-        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop'
-      },
-      {
-        title: 'Executive MBA',
-        code: 'EMBA',
-        description: 'Designed for working professionals looking to upskill and accelerate their careers without taking a career break.',
-        duration: '18 Months',
-        eligibility: 'Graduation + 2 Years Work Experience',
-        image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop'
-      },
-      {
         title: 'Post Graduate Diploma in Management (PGDM)',
         code: 'PGDM',
         description: 'An industry-oriented program focusing on practical skills, case studies, and real-world business problem solving.',
         duration: '2 Years',
         eligibility: 'Graduation with 50% marks',
+        seats: 120,
         image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop'
       },
       {
-        title: 'Ph.D. in Management',
-        code: 'PHD',
-        description: 'A research-intensive program for aspiring academicians and researchers contributing to the field of management science.',
-        duration: '3-5 Years',
-        eligibility: 'Master\'s Degree with 55% marks',
-        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop'
+        title: 'PGDM (Artificial Intelligence and Data Science)',
+        code: 'PGDM-AI',
+        description: 'Specialized program combining management principles with AI and data science applications.',
+        duration: '2 Years',
+        eligibility: 'Graduation with 50% marks',
+        seats: 60,
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop'
+      },
+      {
+        title: 'PGDM (Finance, Marketing and Human Resource Management)',
+        code: 'PGDM-FMH',
+        description: 'Comprehensive program covering Finance, Marketing, and HR specializations.',
+        duration: '2 Years',
+        eligibility: 'Graduation with 50% marks',
+        seats: 60,
+        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop'
+      },
+      {
+        title: 'PGDM (Health Care and Hospital Management)',
+        code: 'PGDM-HCH',
+        description: 'Specialized program for healthcare sector focusing on hospital administration.',
+        duration: '2 Years',
+        eligibility: 'Graduation with 50% marks',
+        seats: 60,
+        image: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=2070&auto=format&fit=crop'
+      },
+      {
+        title: 'PGDM (Operations Management)',
+        code: 'PGDM-OM',
+        description: 'Focused program on operations, supply chain, and logistics management.',
+        duration: '2 Years',
+        eligibility: 'Graduation with 50% marks',
+        seats: 60,
+        image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop'
       }
     ];
 

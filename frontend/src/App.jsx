@@ -8,6 +8,7 @@ import Admissions from './pages/Admissions';
 import Placements from './pages/Placements';
 import Contact from './pages/Contact';
 import ApplyOnline from './pages/ApplyOnline';
+import AdminApplications from './pages/AdminApplications';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/placement" element={<Placements />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/apply" element={<ApplyOnline />} />
+        <Route path="/admin/applications" element={<AdminApplications />} />
       </Routes>
     </Router>
   );

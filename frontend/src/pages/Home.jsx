@@ -83,8 +83,8 @@ const Home = () => {
         <div className="relative">
           <div className="absolute -top-4 -left-4 w-24 h-24 bg-bims-green rounded-tl-3xl opacity-20"></div>
           <img 
-            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop" 
-            alt="Students" 
+            src="/images/college.jpeg" 
+            alt="BIMS College Building" 
             className="rounded-lg shadow-xl relative z-10 w-full"
           />
           <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-bims-blue rounded-br-3xl opacity-20"></div>
@@ -149,10 +149,22 @@ const Home = () => {
                    <div className="absolute top-4 right-4 bg-bims-green text-white text-xs font-bold px-2 py-1 rounded">
                      {course.duration}
                    </div>
+                   {course.seats && (
+                     <div className="absolute top-4 left-4 bg-bims-blue text-white text-xs font-bold px-2 py-1 rounded">
+                       {course.seats} Seats
+                     </div>
+                   )}
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{course.title}</h3>
                   <p className="text-sm text-gray-500 mb-4">{course.code}</p>
+                  {course.seats && (
+                    <div className="mb-4">
+                      <span className="bg-green-100 text-green-800 text-sm font-bold px-3 py-1 rounded-full">
+                        {course.seats} Seats Available
+                      </span>
+                    </div>
+                  )}
                   <p className="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">{course.description}</p>
                   
                   <div className="border-t border-gray-100 pt-4 mt-auto">
@@ -254,10 +266,41 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Faculty Highlight Section */}
+      {/* Leadership & Faculty Section */}
       {faculty.length > 0 && (
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
+            {/* Leadership */}
+            <div className="text-center mb-12">
+               <h2 className="text-3xl font-bold text-gray-900">Our Leadership</h2>
+               <div className="w-20 h-1 bg-bims-blue mx-auto mt-4"></div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto mb-16">
+              <div className="bg-gradient-to-br from-bims-blue to-blue-900 rounded-xl shadow-2xl p-8 text-center transform hover:scale-105 transition">
+                <div className="w-40 h-40 mx-auto bg-white rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                  <img 
+                    src="/images/court.jpeg" 
+                    alt="Swadhishree Pradhan" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <h3 className="font-bold text-xl text-white mb-1">Swadhishree Pradhan</h3>
+                <p className="text-bims-green text-base font-semibold">Secretary</p>
+              </div>
+              <div className="bg-gradient-to-br from-bims-blue to-blue-900 rounded-xl shadow-2xl p-8 text-center transform hover:scale-105 transition">
+                <div className="w-40 h-40 mx-auto bg-white rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                  <img 
+                    src="/images/chairman.jpeg" 
+                    alt="Akash Mohapatra" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <h3 className="font-bold text-xl text-white mb-1">Akash Mohapatra</h3>
+                <p className="text-bims-green text-base font-semibold">Chairman</p>
+              </div>
+            </div>
+            
+            {/* Faculty */}
             <div className="text-center mb-12">
                <h2 className="text-3xl font-bold text-gray-900">Distinguished Faculty</h2>
                <div className="w-20 h-1 bg-bims-green mx-auto mt-4"></div>
