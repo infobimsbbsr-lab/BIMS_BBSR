@@ -5,7 +5,7 @@ const Hero = ({ news }) => {
   // Default news if none provided from backend
   const newsItems = news && news.length > 0
     ? news.map(n => n.title).join(' • ')
-    : "Admissions open for MBA Batch 2026-2028 • BIMS ranked Top 10 B-School in Odisha • Placement drive successfully completed with 100% placement record.";
+    : "Admissions Open for 2026-28 Batch • BIMS ranked Top 10 B-School in Odisha • Placement drive successfully completed with 100% placement record.";
 
   return (
     <div className="relative bg-gray-900 h-[500px] md:h-[600px] overflow-hidden">
@@ -22,7 +22,7 @@ const Hero = ({ news }) => {
       <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
         <div className="max-w-2xl text-white">
           <span className="inline-block bg-bims-green text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-            ADMISSIONS OPEN 2026-2028
+            Admissions Open for 2026-28 Batch
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Shaping Future <br />

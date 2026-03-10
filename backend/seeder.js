@@ -105,7 +105,7 @@ const importData = async () => {
     // Sample Events/News
     const events = [
       {
-        title: 'Admissions Open for 2026-2028 Batch',
+        title: 'Admissions Open for 2026-28 Batch',
         description: 'Applications are invited for the MBA program.',
         date: new Date(),
         category: 'News'
