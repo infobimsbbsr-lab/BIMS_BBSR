@@ -87,7 +87,7 @@ const ApplyOnline = () => {
       <section className="py-16 max-w-5xl mx-auto px-4 w-full">
         <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
           <div className="bg-bims-blue text-white p-6 md:p-8">
-            <h2 className="text-2xl font-bold">Admission Application Form 26-27</h2>
+            <h2 className="text-2xl font-bold">Admission Application Form 2026-2028</h2>
             <p className="text-blue-100 mt-2">Please fill in the details carefully. Fields marked with * are mandatory.</p>
           </div>
 

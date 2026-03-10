@@ -22,7 +22,7 @@ const Hero = ({ news }) => {
       <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
         <div className="max-w-2xl text-white">
           <span className="inline-block bg-bims-green text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-            ADMISSIONS OPEN 26-27
+            ADMISSIONS OPEN 2026-2028
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Shaping Future <br />
