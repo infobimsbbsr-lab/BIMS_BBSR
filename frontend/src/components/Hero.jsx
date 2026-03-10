@@ -47,7 +47,7 @@ const Hero = ({ news }) => {
         <div className="max-w-7xl mx-auto px-4 flex items-center overflow-hidden">
           <span className="font-bold bg-bims-green px-3 py-1 text-xs rounded mr-4 shrink-0 z-10 relative">LATEST NEWS</span>
           <div className="overflow-hidden w-full relative">
-            <p className="animate-marquee inline-block text-sm">
+            <p className="text-sm truncate">
               {newsItems}
             </p>
           </div>
