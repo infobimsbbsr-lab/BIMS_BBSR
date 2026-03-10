@@ -22,8 +22,8 @@ const AdminApplications = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Admission Applications 2024-25</h1>
-        
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">Admission Applications 26-27</h1>
+
         {loading ? (
           <p>Loading applications...</p>
         ) : applications.length === 0 ? (

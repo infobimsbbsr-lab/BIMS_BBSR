@@ -69,9 +69,9 @@ const ApplyOnline = () => {
       window.scrollTo(0, 0);
     } catch (error) {
       console.error(error);
-      setStatus({ 
-        type: 'error', 
-        message: error.response?.data?.message || 'Something went wrong. Please try again.' 
+      setStatus({
+        type: 'error',
+        message: error.response?.data?.message || 'Something went wrong. Please try again.'
       });
       window.scrollTo(0, 0);
     } finally {
@@ -87,29 +87,29 @@ const ApplyOnline = () => {
       <section className="py-16 max-w-5xl mx-auto px-4 w-full">
         <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
           <div className="bg-bims-blue text-white p-6 md:p-8">
-            <h2 className="text-2xl font-bold">Admission Application Form 2024-25</h2>
+            <h2 className="text-2xl font-bold">Admission Application Form 26-27</h2>
             <p className="text-blue-100 mt-2">Please fill in the details carefully. Fields marked with * are mandatory.</p>
           </div>
 
           <div className="p-6 md:p-10">
             {status.message && (
               <div className={`mb-8 p-4 rounded-lg flex items-center gap-3 ${status.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
-                {status.type === 'success' ? <CheckCircle size={24}/> : <AlertCircle size={24}/>}
+                {status.type === 'success' ? <CheckCircle size={24} /> : <AlertCircle size={24} />}
                 <p className="font-medium">{status.message}</p>
               </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-8">
-              
+
               {/* Section 1: Course Selection */}
               <div>
                 <h3 className="text-lg font-bold text-bims-blue border-b pb-2 mb-4">1. Program Selection</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="text-sm font-semibold text-gray-700">Course Applied For *</label>
-                    <select 
-                      name="courseApplied" 
-                      value={formData.courseApplied} 
+                    <select
+                      name="courseApplied"
+                      value={formData.courseApplied}
                       onChange={handleChange}
                       className="border border-gray-300 rounded p-3 focus:outline-none focus:border-bims-blue bg-white"
                       required
@@ -226,8 +226,8 @@ const ApplyOnline = () => {
 
               {/* Submit Button */}
               <div className="pt-6 border-t">
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={isSubmitting}
                   className="w-full md:w-auto bg-bims-green hover:bg-green-600 text-white font-bold py-4 px-12 rounded shadow-lg transition transform hover:-translate-y-1 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
