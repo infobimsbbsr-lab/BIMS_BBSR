@@ -1,2 +1,0 @@
-This is a placeholder for the BIMS Fee Structure.
-Please replace this file with your actual PDF file in the frontend/public/downloads/ folder.
