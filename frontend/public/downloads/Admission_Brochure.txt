@@ -1,0 +1,2 @@
+This is a placeholder for the BIMS Admission Brochure.
+Please replace this file with your actual PDF file (e.g., Admission_Brochure.pdf) in the frontend/public/downloads/ folder and update the link in Admissions.jsx.
