@@ -9,6 +9,8 @@ import Placements from './pages/Placements';
 import Contact from './pages/Contact';
 import ApplyOnline from './pages/ApplyOnline';
 import AdminApplications from './pages/AdminApplications';
+import Examination from './pages/Examination';
+import CampusLife from './pages/CampusLife';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/admission" element={<Admissions />} />
-        <Route path="/placement" element={<Placements />} />
+        <Route path="/placements" element={<Placements />} />
+        <Route path="/examination" element={<Examination />} />
+        <Route path="/campus-life" element={<CampusLife />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/apply" element={<ApplyOnline />} />
         <Route path="/admin/applications" element={<AdminApplications />} />
