@@ -366,14 +366,55 @@ const Admissions = () => {
                   value={formData.course}
                   onChange={handleChange}
                   className="w-full px-3 py-2.5 rounded-sm bg-slate-50 border border-slate-300 outline-none text-sm focus:border-slate-900 focus:bg-white transition"
+                  required
                 >
-                  <option value="MBA">Master of Business Administration</option>
-                  <option value="PGDM">
-                    Post Graduate Diploma in Management
-                  </option>
-                  <option value="BBA">
-                    Bachelor of Business Administration
-                  </option>
+                  <option value="">-- Choose Program --</option>
+
+                  {/* UG Programs */}
+                  <optgroup label="Undergraduate (UG) Programs">
+                    <option value="B.Sc Artificial Intelligence & Machine Learning">
+                      B.Sc Artificial Intelligence & Machine Learning
+                    </option>
+
+                    <option value="B.Sc Microbiology">
+                      B.Sc Microbiology
+                    </option>
+
+                    <option value="Bachelor of Journalism & Mass Communication">
+                      Bachelor of Journalism & Mass Communication (BJMC)
+                    </option>
+
+                    <option value="B.Sc Computer Science">
+                      B.Sc Computer Science
+                    </option>
+                  </optgroup>
+
+                  {/* PG Programs */}
+                  <optgroup label="Postgraduate (PG) Programs">
+                    <option value="PGDM">
+                      Post Graduate Diploma in Management (PGDM)
+                    </option>
+
+                    <option value="PGDM AI & Data Science">
+                      PGDM AI & Data Science
+                    </option>
+
+                    <option value="PGDM Finance & Human Resource">
+                      PGDM Finance & Human Resource
+                    </option>
+
+                    <option value="PGDM Healthcare Management">
+                      PGDM Healthcare Management
+                    </option>
+
+                    <option value="PGDM Operations Management">
+                      PGDM Operations Management
+                    </option>
+
+                    <option value="Master of Social Work (MSW)">
+                      Master of Social Work (MSW)
+                    </option>
+                  </optgroup>
                 </select>
               </div>
 
@@ -557,52 +598,100 @@ const Admissions = () => {
       </section>
 
       {/* ELIGIBILITY */}
+      {/* ELIGIBILITY CRITERIA */}
       <section className="py-20 px-4 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-amber-600 font-extrabold uppercase text-xs tracking-widest">
             Eligibility Criteria
           </span>
+
           <h2 className="text-2xl md:text-3xl font-serif font-bold mt-1 text-slate-900">
-            Program-wise eligibility details
+            Program-wise Eligibility Details
           </h2>
+
+          <p className="text-slate-600 mt-4">
+            Candidates must fulfill the minimum eligibility criteria for their
+            chosen programme before applying for admission.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           {[
             {
               icon: <GraduationCap />,
-              title: "MBA Admission",
-              text: "Graduation in any discipline. Entrance score may be considered as per admission norms.",
+              title: "B.Sc AI & Machine Learning",
+              text: "Passed 10+2 (Science) with Mathematics/Computer Science from a recognized board.",
             },
+
+            {
+              icon: <GraduationCap />,
+              title: "B.Sc Microbiology",
+              text: "Passed 10+2 (Science) with Biology from a recognized board.",
+            },
+
+            {
+              icon: <GraduationCap />,
+              title: "Bachelor of Journalism & Mass Communication",
+              text: "Passed 10+2 in any stream from a recognized board.",
+            },
+
+            {
+              icon: <GraduationCap />,
+              title: "B.Sc Computer Science",
+              text: "Passed 10+2 with Mathematics/Computer Science from a recognized board.",
+            },
+
             {
               icon: <UserCheck />,
-              title: "PGDM Admission",
-              text: "Graduation with academic performance and counseling verification.",
+              title: "PGDM / PGDM AI & DS",
+              text: "Bachelor's Degree in any discipline from a recognized University.",
             },
+
+            {
+              icon: <UserCheck />,
+              title: "PGDM Finance & HR",
+              text: "Graduation in any discipline. Preference may be given to Commerce, Management and Economics graduates.",
+            },
+
+            {
+              icon: <UserCheck />,
+              title: "PGDM Healthcare",
+              text: "Bachelor's Degree in any discipline. Candidates from healthcare backgrounds are also eligible.",
+            },
+
+            {
+              icon: <UserCheck />,
+              title: "PGDM Operations",
+              text: "Graduation in any discipline from a recognized University.",
+            },
+
             {
               icon: <ShieldCheck />,
-              title: "BBA Admission",
-              text: "10+2 passed from a recognized board with required academic documents.",
+              title: "Master of Social Work (MSW)",
+              text: "Bachelor's Degree in any discipline with minimum qualifying marks as per University norms.",
             },
-          ].map((item, i) => (
+          ].map((item, index) => (
             <div
-              key={i}
-              className="bg-white rounded-sm p-8 border border-slate-200 shadow-xs"
+              key={index}
+              className="bg-white rounded-xl p-8 border border-slate-200 shadow hover:shadow-lg transition"
             >
-              <div className="w-12 h-12 rounded-sm bg-slate-100 text-[#0d1e3d] flex items-center justify-center mb-6 border border-slate-200">
+              <div className="w-14 h-14 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center mb-6">
                 {item.icon}
               </div>
-              <h3 className="text-lg font-bold text-slate-900 font-serif">
+
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
                 {item.title}
               </h3>
-              <p className="text-slate-600 mt-3 text-sm leading-relaxed">
+
+              <p className="text-slate-600 text-sm leading-7">
                 {item.text}
               </p>
             </div>
           ))}
+
         </div>
       </section>
-
       {/* FAQ */}
       <section className="py-20 px-4 max-w-4xl mx-auto">
         <div className="text-center mb-12">
