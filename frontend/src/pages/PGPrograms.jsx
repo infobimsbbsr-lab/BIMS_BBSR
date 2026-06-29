@@ -19,8 +19,8 @@ const PGPrograms = () => {
       image: "/images/PGDM AI & Data Science.jfif",
     },
     {
-      title: "PGDM in Finance & Human Resource",
-      short: "PGDM Finance & HR",
+      title: "PGDM in Finance, Marketing & Human Resource Management",
+      short: "PGDM Finance, Marketing & HR",
       slug: "pgdm-finance-hr",
       image: "/images/PGDM Finance & HR.jfif",
     },

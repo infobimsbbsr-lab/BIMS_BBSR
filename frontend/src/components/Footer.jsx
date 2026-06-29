@@ -293,7 +293,7 @@ const Footer = () => {
           to="/pg/pgdm-finance-hr"
           className="block hover:text-yellow-400 transition"
         >
-          PGDM Finance & HR
+         PGDM Finance, Marketing & HR
         </Link>
 
         <Link
