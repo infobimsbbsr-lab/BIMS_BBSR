@@ -210,7 +210,7 @@ const Footer = () => {
         </div>
 
         {/* Programs */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-bold mb-6 text-yellow-400">
             Programs
           </h3>
@@ -223,7 +223,103 @@ const Footer = () => {
             <p>AI & ML</p>
             <p>Industry Internship</p>
           </div>
-        </div>
+        </div> */}
+        {/* Programs */}
+<div>
+  <h3 className="text-xl font-bold mb-6 text-yellow-400">
+    Our Programs
+  </h3>
+
+  <div className="space-y-5">
+    {/* UG Programs */}
+    <div>
+      <h4 className="text-white font-semibold mb-2">
+        UG Programs
+      </h4>
+
+      <div className="space-y-2 text-slate-300 text-sm">
+        <Link
+          to="/ug/ai-ml"
+          className="block hover:text-yellow-400 transition"
+        >
+          B.Sc AI & Machine Learning
+        </Link>
+
+        <Link
+          to="/ug/microbiology"
+          className="block hover:text-yellow-400 transition"
+        >
+          B.Sc Microbiology
+        </Link>
+
+        <Link
+          to="/ug/bjmc"
+          className="block hover:text-yellow-400 transition"
+        >
+          Bachelor of Journalism & Mass Communication
+        </Link>
+
+        <Link
+          to="/ug/computer-science"
+          className="block hover:text-yellow-400 transition"
+        >
+          B.Sc Computer Science
+        </Link>
+      </div>
+    </div>
+
+    {/* PG Programs */}
+    <div>
+      <h4 className="text-white font-semibold mb-2">
+        PG Programs
+      </h4>
+
+      <div className="space-y-2 text-slate-300 text-sm">
+        <Link
+          to="/pg/pgdm"
+          className="block hover:text-yellow-400 transition"
+        >
+          PGDM
+        </Link>
+
+        <Link
+          to="/pg/pgdm-ai-ds"
+          className="block hover:text-yellow-400 transition"
+        >
+          PGDM AI & Data Science
+        </Link>
+
+        <Link
+          to="/pg/pgdm-finance-hr"
+          className="block hover:text-yellow-400 transition"
+        >
+          PGDM Finance & HR
+        </Link>
+
+        <Link
+          to="/pg/pgdm-healthcare"
+          className="block hover:text-yellow-400 transition"
+        >
+          PGDM Healthcare
+        </Link>
+
+        <Link
+          to="/pg/pgdm-operations"
+          className="block hover:text-yellow-400 transition"
+        >
+          PGDM Operations
+        </Link>
+
+        <Link
+          to="/pg/msw"
+          className="block hover:text-yellow-400 transition"
+        >
+          Master of Social Work (MSW)
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
 
         {/* Contact */}
         <div>

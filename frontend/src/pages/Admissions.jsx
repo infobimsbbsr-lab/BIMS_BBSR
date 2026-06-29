@@ -13,7 +13,7 @@
 //       <PageHeader title="Admissions" breadcrumb="Admission" />
 
 //       <section className="py-16 max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-12">
-        
+
 //         {/* Main Content */}
 //         <div className="lg:col-span-2 space-y-10">
 //           <div>
@@ -21,7 +21,7 @@
 //             <p className="text-gray-600 mb-6">
 //               Admission to BIMS is based on merit and entrance test scores. We look for candidates who demonstrate leadership potential, academic excellence, and a drive to succeed.
 //             </p>
-            
+
 //             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
 //               <h3 className="font-bold text-lg mb-4">Steps to Apply:</h3>
 //               <ol className="relative border-l border-gray-200 ml-3 space-y-6">
@@ -140,7 +140,7 @@ const Admissions = () => {
     name: "",
     email: "",
     phone: "",
-    course: "MBA",
+    course: "",
     qualification: "",
     message: "",
   });
@@ -183,7 +183,7 @@ const Admissions = () => {
         name: "",
         email: "",
         phone: "",
-        course: "MBA",
+        course: "",
         qualification: "",
         message: "",
       });
@@ -233,8 +233,7 @@ const Admissions = () => {
           Admission Notice
         </span>
         <marquee scrollamount="4">
-          Admissions are open for MBA, PGDM and BBA programs. Submit your inquiry
-          form to receive counseling support from the admissions desk.
+          Admissions Open 2026-27 | Applications are invited for all Undergraduate (UG) and Postgraduate (PG) programmes at Bhubaneswar Institute of Management & Science (BIMS). Apply online today and begin your academic journey with us.
         </marquee>
       </div>
 
@@ -251,14 +250,12 @@ const Admissions = () => {
             <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight text-slate-100">
               Admission Process for <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200 font-sans font-black">
-                BIMS Academic Programs
+                UG & PG Admissions
               </span>
             </h1>
 
             <p className="mt-5 text-base text-slate-300 max-w-xl leading-relaxed">
-              Apply for MBA, PGDM and BBA programs through the official
-              admissions desk. Get eligibility, fee, course and counseling
-              guidance from the academic team.
+              Complete your online application for any Undergraduate (UG) or Postgraduate (PG) programme offered by BIMS. Fill in your personal, academic and contact details to start your admission process.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
@@ -280,7 +277,7 @@ const Admissions = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10">
               {[
                 ["Mode", "Online / Offline"],
-                ["Courses", "MBA / PGDM / BBA"],
+                ["Courses", "UG / PG"],
                 ["Support", "Counseling Desk"],
                 ["Status", "Open Now"],
               ].map((item, i) => (
@@ -425,9 +422,9 @@ const Admissions = () => {
       <section className="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
         <div className="bg-white rounded-sm shadow-md border-x border-b border-slate-200 grid grid-cols-2 md:grid-cols-4 overflow-hidden divide-x divide-slate-100">
           {[
-            ["MBA", "2 Years Program"],
-            ["PGDM", "Industry Aligned"],
-            ["BBA", "3 Years Degree"],
+            ["UG Courses", "4 Programmes"],
+            ["PG Courses", "6 Programmes"],
+            ["Admissions", "2026-27"],
             ["Support", "Admission Cell"],
           ].map((item, i) => (
             <div key={i} className="p-5 text-center bg-white">

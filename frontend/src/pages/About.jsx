@@ -111,7 +111,7 @@ const About = () => {
               </span>
             </h1>
 
-            <p className="mt-5 text-base text-slate-300 max-w-xl leading-relaxed">
+            <p className="mt-5 text-base text-slate-300 max-w-xl leading-relaxed  text-justify">
               BIMS is committed to building future-ready management
               professionals through structured academics, practical exposure,
               institutional discipline, and systematic career preparation.
@@ -184,7 +184,7 @@ const About = () => {
 
             <div className="w-12 h-1 bg-amber-500 mt-4 mb-6" />
 
-            <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
+            <div className="space-y-4 text-slate-600 text-sm leading-relaxed  text-justify" >
               <p>
                 Bhubaneswar Institute of Management and Science, a unit of
                 Swastik Education & Charitable Trust, was established with a
@@ -293,7 +293,7 @@ const About = () => {
               <h3 className="text-lg font-bold text-slate-900 font-serif">
                 Our Vision
               </h3>
-              <p className="text-slate-600 mt-3 text-sm leading-relaxed">
+              <p className="text-slate-600 mt-3 text-sm leading-relaxed  text-justify">
                 To become a recognized center of excellence in management
                 education, nurturing ethical leadership, innovation, and
                 sustainable professional growth.
@@ -305,7 +305,7 @@ const About = () => {
                 <Target />
               </div>
               <h3 className="text-lg font-bold font-serif">Our Mission</h3>
-              <p className="text-slate-300 mt-3 text-sm leading-relaxed">
+              <p className="text-slate-300 mt-3 text-sm leading-relaxed  text-justify">
                 To empower students with conceptual knowledge, practical skills,
                 communication ability, and values required to excel in a dynamic
                 corporate environment.

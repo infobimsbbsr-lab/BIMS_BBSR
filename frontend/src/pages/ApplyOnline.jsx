@@ -266,7 +266,7 @@ import axios from "axios";
 
 const ApplyOnline = () => {
   const [formData, setFormData] = useState({
-    courseApplied: "MBA",
+    courseApplied: "",
     firstName: "",
     lastName: "",
     fatherName: "",
@@ -297,7 +297,7 @@ const ApplyOnline = () => {
 
   const resetForm = () => {
     setFormData({
-      courseApplied: "MBA",
+      courseApplied: "",
       firstName: "",
       lastName: "",
       fatherName: "",
@@ -393,8 +393,7 @@ const ApplyOnline = () => {
         </span>
 
         <marquee scrollamount="4">
-          Applications are now open for MBA, IMBA and BBA programs. Submit your
-          online application through the official BIMS admission portal.
+          Admissions Open 2026-27 | Applications are invited for all Undergraduate and Postgraduate Programs including B.Sc AI & ML, B.Sc Microbiology, BJMC, B.Sc Computer Science, PGDM, PGDM AI & DS, PGDM Finance & HR, PGDM Healthcare, PGDM Operations and MSW.
         </marquee>
       </div>
 
@@ -416,17 +415,17 @@ const ApplyOnline = () => {
             </h1>
 
             <p className="mt-5 text-base text-slate-300 max-w-xl leading-relaxed">
-              Complete your online application process for MBA, IMBA and BBA
-              programs. Submit your personal, contact and academic details to
-              begin your admission journey.
+              Complete your online application for all Undergraduate and Postgraduate programmes offered by Bhubaneswar Institute of Management & Science (BIMS). Fill in your academic and personal details to begin your admission process.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10">
               {[
-                ["MBA", "2 Years Program"],
-                ["IMBA", "Integrated Degree"],
-                ["BBA", "Business Studies"],
-                ["Support", "Admission Desk"],
+                
+                  ["UG", "4 Undergraduate Programs"],
+                  ["PG", "6 Postgraduate Programs"],
+                  ["Placement", "Career Assistance"],
+                  ["Support", "Admission Help"],
+                
               ].map((item, i) => (
                 <div
                   key={i}
@@ -476,11 +475,10 @@ const ApplyOnline = () => {
       <section className="py-20 max-w-6xl mx-auto px-4 w-full">
         {status.message && (
           <div
-            className={`mb-8 p-4 rounded-sm flex items-center gap-3 border ${
-              status.type === "success"
-                ? "bg-green-50 text-green-800 border-green-200"
-                : "bg-red-50 text-red-800 border-red-200"
-            }`}
+            className={`mb-8 p-4 rounded-sm flex items-center gap-3 border ${status.type === "success"
+              ? "bg-green-50 text-green-800 border-green-200"
+              : "bg-red-50 text-red-800 border-red-200"
+              }`}
           >
             {status.type === "success" ? (
               <CheckCircle size={24} />
@@ -514,7 +512,7 @@ const ApplyOnline = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col">
                     <label className={labelClass}>Course Applied For *</label>
-                    <select
+                    {/* <select
                       name="courseApplied"
                       value={formData.courseApplied}
                       onChange={handleChange}
@@ -526,6 +524,59 @@ const ApplyOnline = () => {
                       </option>
                       <option value="IMBA">Integrated MBA</option>
                       <option value="BBA">BBA</option>
+                    </select> */}
+                    <select
+                      name="courseApplied"
+                      value={formData.courseApplied}
+                      onChange={handleChange}
+                      className={inputClass}
+                      required
+                    >
+                      <option value="">-- Choose Program --</option>
+
+                      <optgroup label="Undergraduate (UG)">
+                        <option value="B.Sc Artificial Intelligence & Machine Learning">
+                          B.Sc Artificial Intelligence & Machine Learning
+                        </option>
+
+                        <option value="B.Sc Microbiology">
+                          B.Sc Microbiology
+                        </option>
+
+                        <option value="Bachelor of Journalism & Mass Communication">
+                          Bachelor of Journalism & Mass Communication (BJMC)
+                        </option>
+
+                        <option value="B.Sc Computer Science">
+                          B.Sc Computer Science
+                        </option>
+                      </optgroup>
+
+                      <optgroup label="Postgraduate (PG)">
+                        <option value="PGDM">
+                          Post Graduate Diploma in Management (PGDM)
+                        </option>
+
+                        <option value="PGDM Artificial Intelligence & Data Science">
+                          PGDM Artificial Intelligence & Data Science
+                        </option>
+
+                        <option value="PGDM Finance & Human Resource">
+                          PGDM Finance & Human Resource
+                        </option>
+
+                        <option value="PGDM Healthcare Management">
+                          PGDM Healthcare Management
+                        </option>
+
+                        <option value="PGDM Operations Management">
+                          PGDM Operations Management
+                        </option>
+
+                        <option value="Master of Social Work">
+                          Master of Social Work (MSW)
+                        </option>
+                      </optgroup>
                     </select>
                   </div>
                 </div>
