@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import PageHeader from '../components/PageHeader';
+import PageHeader from '../components/cources/UG/PageHeader';
 import axios from 'axios';
 import { Mail, GraduationCap } from 'lucide-react';
 

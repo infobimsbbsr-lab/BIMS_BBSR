@@ -547,10 +547,10 @@ const Navbar = () => {
 
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="w-[700px] xl:w-[760px] bg-white rounded-3xl shadow-2xl border border-slate-100 p-5 grid grid-cols-2 gap-4">
-                  <Link
-                    to="/programs"
-                    className="p-5 rounded-2xl hover:bg-blue-50 transition flex gap-4"
-                  >
+                <Link
+  to="/ug-programs"
+  onClick={() => setIsOpen(false)}
+>
                     <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center shrink-0">
                       <BookOpen size={22} />
                     </div>
@@ -562,10 +562,10 @@ const Navbar = () => {
                     </div>
                   </Link>
 
-                  <Link
-                    to="/programs"
-                    className="p-5 rounded-2xl hover:bg-emerald-50 transition flex gap-4"
-                  >
+                 <Link
+  to="/pg-programs"
+  onClick={() => setIsOpen(false)}
+>
                     <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0">
                       <Briefcase size={22} />
                     </div>
@@ -639,11 +639,11 @@ const Navbar = () => {
           {/* Desktop Right */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
-              href="tel:+917008411323"
+              href="tel:+918260650850"
               className="hidden xl:flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-blue-700 whitespace-nowrap"
             >
               <Phone size={17} />
-              +91 70084 11323
+              +91 82606 50850
             </a>
 
             <Link
@@ -764,10 +764,10 @@ const Navbar = () => {
             </Link>
 
             <a
-              href="tel:+917008411323"
+              href="tel:+918260650850"
               className="block px-4 py-3 rounded-xl font-bold text-blue-700 bg-blue-50"
             >
-              Call: +91 70084 11323
+              Call: +91 82606 50850
             </a>
 
             <Link
