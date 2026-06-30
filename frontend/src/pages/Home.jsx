@@ -1114,7 +1114,7 @@ const displayFaculty = [
               <div className="absolute -top-5 -left-5 w-full h-full border-4 border-amber-500 rounded-3xl"></div>
 
               <img
-                src="/images/chairman..jpeg"
+                src="/images/chairman.jpeg"
                 alt="Chairman"
                 className="relative rounded-3xl shadow-2xl w-full h-[580px] object-cover"
               />
