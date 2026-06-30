@@ -632,6 +632,7 @@
 
 
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import axios from "axios";
@@ -658,7 +659,7 @@ const Home = () => {
     course: "",
     message: "",
   });
-
+  const navigate = useNavigate();
   const [status, setStatus] = useState("");
   const [courses, setCourses] = useState(null);
   const [events, setEvents] = useState(null);
@@ -915,7 +916,8 @@ const displayFaculty = [
               </button>
 
               <button
-                onClick={() => scrollToSection("curriculum")}
+                // onClick={() => scrollToSection("curriculum")}
+                  onClick={() => navigate("/programs")}
                 className="border border-slate-400/40 bg-white/5 px-6 py-3.5 rounded-sm font-bold hover:bg-white/10 transition-colors text-center text-sm uppercase tracking-wider"
               >
                 Academic Programs
@@ -1090,98 +1092,297 @@ const displayFaculty = [
         </div>
       </section>
 
-      {/* CHAIRMAN'S MESSAGE SECTION */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* LEADERSHIP TEAM */}
+<section className="py-20 bg-slate-50">
+  <div className="max-w-7xl mx-auto px-4">
 
-          <div className="text-center mb-14">
-            <span className="text-amber-600 font-bold uppercase tracking-[3px] text-xs">
-              Leadership Message
-            </span>
+    <div className="text-center mb-16">
+      <span className="text-amber-600 uppercase tracking-[3px] text-xs font-bold">
+        Our Leadership
+      </span>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3">
-              Chairman's Message
-            </h2>
+      <h2 className="text-4xl font-bold text-slate-900 mt-3">
+        Guiding BIMS Towards Excellence
+      </h2>
 
-            <div className="w-24 h-1 bg-amber-500 mx-auto mt-5 rounded-full"></div>
-          </div>
+      <p className="text-slate-600 mt-4 max-w-3xl mx-auto leading-7">
+        Our leadership team is dedicated to providing quality education,
+        fostering innovation, and empowering students with the knowledge,
+        values, and skills required for successful professional careers.
+      </p>
 
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
+      <div className="w-24 h-1 bg-amber-500 mx-auto mt-5 rounded-full"></div>
+    </div>
 
-            {/* Chairman Photo */}
-            <div className="relative">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
 
-              <div className="absolute -top-5 -left-5 w-full h-full border-4 border-amber-500 rounded-3xl"></div>
+      {/* Chairman */}
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
 
-              <img
-                src="/images/chairman.jpeg"
-                alt="Chairman"
-                className="relative rounded-3xl shadow-2xl w-full h-[580px] object-cover"
-              />
+        <img
+          src="/images/chairman.jpeg"
+          alt="Chairman"
+          className="w-full h-80 object-cover"
+        />
 
-            </div>
+        <div className="p-7">
 
-            {/* Message */}
-            <div>
+          <span className="inline-block bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-semibold">
+            Chairman
+          </span>
 
-              <span className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full font-semibold text-sm">
-                Welcome to BIMS
-              </span>
+          <h3 className="text-2xl font-bold text-slate-900 mt-5">
+            Akash Mohapatra
+          </h3>
 
-              <h3 className="text-4xl font-bold text-slate-900 mt-6 mb-6">
-                A Vision for Excellence in Higher Education
-              </h3>
+          <div className="w-12 h-1 bg-amber-500 my-4"></div>
 
-              <p className="text-gray-600 leading-8 text-justify mb-6">
-                Welcome to <strong>Bhubaneswar Institute of Management & Science (BIMS)</strong>.
-                Our institution is committed to creating an environment where academic
-                excellence, innovation, leadership, and ethical values come together to
-                prepare students for successful careers. Through industry-oriented education,
-                experienced faculty, modern infrastructure, and practical learning, BIMS
-                empowers students with the knowledge, skills, and confidence required to
-                excel in today's competitive global environment.
-              </p>
-
-              <p className="text-gray-600 leading-8 mb-6 text-justify">
-                At BIMS, we strongly believe that quality education extends
-                beyond the classroom. Through industry-oriented learning,
-                experienced faculty, modern infrastructure, research
-                opportunities, and skill-based training, we empower students
-                to become confident professionals capable of meeting global
-                challenges.
-              </p>
-
-              <p className="text-gray-600 leading-8 mb-8  text-justify">
-                Our vision is to nurture future leaders who possess knowledge,
-                integrity, creativity, and social responsibility. I warmly
-                welcome every aspiring student to join the BIMS family and
-                begin an inspiring journey toward academic excellence and
-                professional success.
-              </p>
-
-              {/* Signature */}
-              <div className="border-l-4 border-amber-500 pl-6">
-
-                <h4 className="text-2xl font-bold text-slate-900">
-                  Akash Mohapatra
-                </h4>
-
-                <p className="text-amber-600 font-semibold mt-1">
-                  Chairman
-                </p>
-
-                <p className="text-gray-500">
-                  Bhubaneswar Institute of Management & Science
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
+          <p className="text-slate-600 leading-7 text-justify">
+            Committed to building an institution that inspires innovation,
+            academic excellence, ethical leadership, and holistic student
+            development through quality education.
+          </p>
 
         </div>
-      </section>
+
+      </div>
+
+      {/* Secretary */}
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+
+        <img
+          src="/images/Secretary.jpeg"
+          alt="Secretary"
+          className="w-full h-80 object-cover"
+        />
+
+        <div className="p-7">
+
+          <span className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">
+            Secretary
+          </span>
+
+          <h3 className="text-2xl font-bold text-slate-900 mt-5">
+           Swadhishree Pradhan
+          </h3>
+
+          <div className="w-12 h-1 bg-blue-600 my-4"></div>
+
+          <p className="text-slate-600 leading-7 text-justify">
+            Dedicated to maintaining academic quality, institutional
+            discipline, and creating an environment that supports learning,
+            research, and professional growth.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Trustee */}
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+
+        <img
+          src="/images/Trustee.jpeg"
+          alt="Trustee"
+          className="w-full h-80 object-cover"
+        />
+
+        <div className="p-7">
+
+          <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+            Trustee
+          </span>
+
+          <h3 className="text-2xl font-bold text-slate-900 mt-5">
+            Smruti Ranjan Muduli
+          </h3>
+
+          <div className="w-12 h-1 bg-green-600 my-4"></div>
+
+          <p className="text-slate-600 leading-7 text-justify">
+            Supporting the institution's vision through continuous
+            development, educational excellence, and initiatives that
+            strengthen student success and social responsibility.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      {/* CHAIRMAN'S MESSAGE SECTION */}
+      {/* <section className="py-16 bg-white">
+  <div className="max-w-6xl mx-auto px-4">
+
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold text-slate-900">
+        Chairman's Message
+      </h2>
+      <div className="w-20 h-1 bg-amber-500 mx-auto mt-4"></div>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-10 items-center">
+
+      <div className="flex justify-center">
+        <img
+          src="/images/chairman.jpeg"
+          alt="Chairman"
+          className="w-64 h-80 object-cover rounded-xl shadow-lg"
+        />
+      </div>
+
+   
+      <div className="md:col-span-2">
+
+        <h3 className="text-2xl font-semibold text-slate-900 mb-5">
+          Welcome to Bhubaneswar Institute of Management & Science
+        </h3>
+
+        <p className="text-gray-600 leading-8 mb-4 text-justify">
+          At BIMS, we are committed to providing quality education that
+          combines academic excellence, innovation, and professional
+          development. Our aim is to prepare students with the knowledge,
+          skills, and values needed to succeed in today's competitive world.
+        </p>
+
+        <p className="text-gray-600 leading-8 mb-4 text-justify">
+          Through experienced faculty, modern infrastructure, industry
+          exposure, and practical learning, we strive to create future
+          leaders who contribute positively to society and the nation.
+        </p>
+
+        <p className="text-gray-600 leading-8 text-justify">
+          I warmly welcome you to the BIMS family and wish you a successful
+          academic journey filled with learning, growth, and achievement.
+        </p>
+
+        <div className="mt-8">
+          <h4 className="text-xl font-bold text-slate-900">
+            Akash Mohapatra
+          </h4>
+          <p className="text-amber-600 font-medium">
+            Chairman
+          </p>
+          <p className="text-gray-500">
+            Bhubaneswar Institute of Management & Science
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section> */}
+{/* <section className="py-16 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-4">
+
+    <div className="grid md:grid-cols-3 gap-10 items-center">
+
+      <div className="flex justify-center">
+        <img
+          src="/images/secretary.jpeg"
+          alt="Secretary"
+          className="w-64 h-80 object-cover rounded-xl shadow-lg"
+        />
+      </div>
+
+      <div className="md:col-span-2">
+
+        <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          Secretary's Message
+        </h2>
+
+        <p className="text-gray-600 leading-8 text-justify mb-5">
+          At Bhubaneswar Institute of Management & Science, we strive to
+          provide students with an academic environment that encourages
+          innovation, discipline, and professional excellence. Our objective
+          is to develop responsible graduates equipped with knowledge,
+          practical skills, and ethical values.
+        </p>
+
+        <p className="text-gray-600 leading-8 text-justify mb-5">
+          Through quality education, experienced faculty, and industry-focused
+          learning, we prepare students to meet the demands of the modern
+          professional world.
+        </p>
+
+        <div className="mt-8">
+          <h3 className="text-xl font-bold">
+            Secretary Name
+          </h3>
+
+          <p className="text-amber-600 font-semibold">
+            Secretary
+          </p>
+
+          <p className="text-gray-500">
+            Bhubaneswar Institute of Management & Science
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section className="py-16 bg-white">
+  <div className="max-w-6xl mx-auto px-4">
+
+    <div className="grid md:grid-cols-3 gap-10 items-center">
+
+      <div className="flex justify-center">
+        <img
+          src="/images/trustee.jpeg"
+          alt="Trustee"
+          className="w-64 h-80 object-cover rounded-xl shadow-lg"
+        />
+      </div>
+
+      <div className="md:col-span-2">
+
+        <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          Trustee's Message
+        </h2>
+
+        <p className="text-gray-600 leading-8 text-justify mb-5">
+          Education is the foundation of a progressive society. At BIMS, our
+          mission is to create opportunities for students to excel
+          academically while developing leadership, creativity, and social
+          responsibility.
+        </p>
+
+        <p className="text-gray-600 leading-8 text-justify mb-5">
+          We remain committed to maintaining high academic standards,
+          supporting innovation, and nurturing students into confident
+          professionals capable of contributing to society.
+        </p>
+
+        <div className="mt-8">
+          <h3 className="text-xl font-bold">
+            Trustee Name
+          </h3>
+
+          <p className="text-amber-600 font-semibold">
+            Trustee
+          </p>
+
+          <p className="text-gray-500">
+            Bhubaneswar Institute of Management & Science
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section> */}
 
       {/* FACULTY PROFILE SECTION */}
       <section className="py-20 px-4 max-w-7xl mx-auto">

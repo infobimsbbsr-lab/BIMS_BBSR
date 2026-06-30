@@ -12,7 +12,7 @@
 
 //       <section className="py-16 max-w-7xl mx-auto px-4">
 //         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
+
 //           {/* Info Side */}
 //           <div className="space-y-8">
 //             <div>
@@ -32,7 +32,7 @@
 //                   <p className="text-gray-600">Bhubaneswar, Khordha</p>
 //                 </div>
 //               </div>
-              
+
 //               <div className="flex items-start gap-4">
 //                 <div className="bg-bims-green/10 p-3 rounded-full text-bims-green">
 //                   <Phone size={24} />
@@ -435,15 +435,17 @@ const Contact = () => {
             </div>
 
             <div className="h-[450px] w-full">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.1332883658596!2d85.8569442!3d20.2924197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190a0300000001%3A0x3f350543209581a0!2sBhubaneswar%20Institute%20of%20Management%20Studies%20(BIMS)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                title="BIMS Location"
-              ></iframe>
+              <div className="h-[450px] rounded-xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://maps.google.com/maps?q=20.242368,85.746936&z=16&output=embed"
+                  className="w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="BIMS Bhubaneswar Location"
+                />
+              </div>
             </div>
           </div>
         </div>
