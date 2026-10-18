@@ -1592,7 +1592,7 @@ const Home = () => {
       _template: "table",
       _captcha: "false",
       "Applicant Name": formData.name,
-      "Applicant Email": formData.email,
+      "Applicant Email": formData.email, 
       "Contact Number": formData.phone,
       "Selected Course": formData.course,
       "Message/Statement": formData.message || "General Campus Inquiry",
@@ -2075,7 +2075,7 @@ const displayFaculty = [
         <div className="p-7">
 
           <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
-            Trustee
+            Trustee-cum-Teasurer
           </span>
 
           <h3 className="text-2xl font-bold text-slate-900 mt-5">
@@ -2398,6 +2398,4 @@ const displayFaculty = [
 };
 
 export default Home;
-
-
 
